@@ -10,11 +10,11 @@ class Booking extends Model
     /** @use HasFactory<\Database\Factories\BookingFactory> */
     use HasFactory;
 
-    public function Guest()
+    public function guest()
     {
         return $this->belongsTo(Guest::class);
     }
-    public function Room()
+    public function room()
     {
         return $this->belongsTo(Room::class);
     }

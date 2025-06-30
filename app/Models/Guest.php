@@ -10,7 +10,7 @@ class Guest extends Model
     /** @use HasFactory<\Database\Factories\GuestFactory> */
     use HasFactory;
 
-    public function Booking()
+    public function bookings()
     {
         return $this->hasMany(Booking::class);
     }

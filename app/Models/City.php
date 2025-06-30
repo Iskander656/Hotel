@@ -11,7 +11,7 @@ class City extends Model
     /** @use HasFactory<\Database\Factories\CityFactory> */
     use HasFactory;
 
-    public function Hotel(): HasMany
+    public function hotels(): HasMany
     {
         return $this->hasMany(Hotel::class); 
     }

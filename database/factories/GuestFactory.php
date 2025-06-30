@@ -21,7 +21,7 @@ class GuestFactory extends Factory
         return [
             'room_id' => $room->id,
             'name' => fake()->name(),
-            'password_number' => fake()->password(),
+            'passport_number' => fake()->ean8(),
             'created_at' => now(),
             'updated_at' => now(),
             
